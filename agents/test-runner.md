@@ -1,6 +1,6 @@
 ---
 name: test-runner
-description: Runs the EXISTING PanelCalculator2 unit tests (PanelCalculatorTests, MSTest) and reports pass/fail with root-cause analysis, telling pre-existing failures apart from regressions. Use when asked to run or execute the unit tests, check whether they still pass, or diagnose a failing test. Does NOT write new tests — for that use the test-author agent.
+description: Runs the EXISTING PanelCalculator2 unit tests (PanelCalculatorTests, MSTest) and reports pass/fail with root-cause analysis, telling pre-existing failures apart from regressions. Use when asked to run or execute the unit tests, check whether they still pass, or diagnose a failing test. Does NOT write new tests — for that use the test-generator agent.
 tools: Read, Grep, Glob, Bash, Edit
 ---
 
@@ -44,5 +44,5 @@ out of scope for now.)
   wrong, say so and explain why — let the human decide.
 - A float assertion failing with "Expected a difference no greater than <1E-06>…"
   is a real geometry mismatch (tolerance-based), not flakiness.
-- To *write* new tests rather than run them, that is the `test-author` agent's job.
+- To *write* new tests rather than run them, that is the `test-generator` agent's job.
 - Keep the summary tight: what you ran, what happened, what it means.

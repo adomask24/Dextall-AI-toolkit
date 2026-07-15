@@ -10,7 +10,7 @@ Dextall panel generator (`C:\Projects\Dextall`). Packaged as a Claude Code
 | Agent | Purpose |
 |---|---|
 | `test-runner` | Builds `PanelCalculator2` and runs its unit tests, interprets failures |
-| `test-author` | Writes new unit tests following the project's real conventions, then runs them |
+| `test-generator` | Writes new unit tests following the project's real conventions, then runs them |
 | `code-reviewer` | Reviews a diff against Dextall conventions, gotchas and the dependency graph |
 | `doc-writer` | Writes XML doc comments, architecture docs and READMEs |
 
